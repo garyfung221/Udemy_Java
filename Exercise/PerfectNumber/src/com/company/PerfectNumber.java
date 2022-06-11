@@ -1,0 +1,23 @@
+package com.company;
+
+public class PerfectNumber {
+
+    public static boolean isPerfectNumber(int number){
+        if(number < 1 ){
+            return false;
+        }
+        int sum = 0;
+        int count = 0;
+        for(int i = 1 ; i < number ; i ++){
+
+            if(number % i == 0){
+                sum+=i;
+                count++;
+            }
+        }
+        if(count<=1||number!=sum){
+            return false;
+        }
+        return true;
+    }
+}

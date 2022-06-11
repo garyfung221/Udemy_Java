@@ -1,0 +1,26 @@
+package com.company;
+
+public class Animal {
+    private String name;
+    private int brain;
+    private int body;
+    private int size;
+    private int weight;
+
+    public Animal(String name, int brain, int body, int size, int weight) {
+        this.name = name;
+        this.brain = brain;
+        this.body = body;
+        this.size = size;
+        this.weight = weight;
+    }
+    public void eat(){
+        System.out.println("Animal eat");
+    }
+    public void walk(){
+        System.out.println("Animal walk");
+    }
+    public Animal test(){
+        return new Animal("Peter",1,1,5,50);
+    }
+}
